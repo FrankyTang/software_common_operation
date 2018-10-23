@@ -1,0 +1,25 @@
+1，字典是python中唯一的内置映射类型。由键以及相应的至组成，这种键-值对称为项。
+
+2，创建字典phonebook = {'name':'xiaoming','number':1253654}
+
+3,基本的字典操作
+ 	len(d) 返回字典d包含的项
+ 	d[k] 返回与键k相关的值
+	d[k] = v 将值v关联到键k
+	del d[k] 删除键为k的项
+	k in d 检查字典d是否包含键k的项
+
+4，常用的方法
+	d.clear() 删除字典d的所有项
+	d.copy() 浅复制，指向同一个字典
+	from copy import deepcopy  a=deepcopy(d) 深复制
+	d.fromkeys(list) 通过list创建一个新的字典，其中包含指定的键，值为None
+	d.get('name','N/A')使用get访问键‘name’的值，如果键‘name'不存在，则返回’N/A’
+	d.items()返回一个包含所有字典项的list，其中每一个元素都是（key,value）的形式
+	d.keys()返回一个字典d的所有键
+	d.pop('x')获取与键’x'相关联的值，并将该键-值对从字典中删除
+	d.popitem()从字典中随机弹出一个项，并将该项从字典中删除
+	d.setdefault('name','N/A')获取键对应的值，如果键不存在，在字典中添加键‘name'和对应的值’N/A'
+	d.update(x)使用字典x的项更新字典d的项
+	d.values() 返回字典d内所有的值，不依赖于键的信息，所以有可能返回的列表中有重复的值
+	
