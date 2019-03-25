@@ -27,3 +27,10 @@ b,git fetch origin
 有用的指令
 a,git add -i (交互地添加文件至缓冲区)
 
+b, git stash: 保存当前修改于本地，回到上一个版本进行操作，之后在从本地取出当前的代码，继续编程。
+	git stash save 'abc-stash' 保存当前节点，并添加备注信息
+	git stash pop 恢复暂存的工作目录。
+	git stash list 查看现有的stash
+	git stash drop 移除stash
+	git stash show 查看指定stash 的diff
+	
